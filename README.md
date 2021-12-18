@@ -20,9 +20,7 @@ npm install
 node index.js
 
 ## Technologies
-
 node.js, ES6, MySQL, Sequelize.js, Express.js
 
 ## Video
-
-A video showing the use of the project can be found at:
+A video showing the use of the project can be found at: https://watch.screencastify.com/v/rUlLbKaz4TSwqWOBH8kZ

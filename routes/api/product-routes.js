@@ -156,19 +156,19 @@ router.put('/:id', (req, res) => {
           });
       }
 
-      let productTagsToRemove = [];
+      // let productTagsToRemove = [];
 
       // figure out which ones to remove
-      if (productTags && req.body.tagIds) {
-         productTagsToRemove = productTags
+      // if (productTags && req.body.tagIds) {
+         const productTagsToRemove = productTags
           .filter(({
             tag_id
           }) => !req.body.tagIds.includes(tag_id))
           .map(({
             id
           }) => id);
-      }
-      
+      // }
+
       // run both actions
       return Promise.all([
         ProductTag.destroy({
